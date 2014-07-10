@@ -1,0 +1,27 @@
+#secret{
+    height: 1;
+    width: 1;
+    background-color: white;
+    border-color: white;
+}
+#multiply {
+    background-color: white;
+    border-color: black;
+}
+#hassanah {
+    height: 150
+}
+#imanboostcalc {
+    text-align:center;
+}
+#display {
+    text-align: center;
+    margin-top: 24;
+    font-size: 24
+}
+#imanBoost {
+    font-family: Impact;
+    margin-top: 30;
+    font-size: 20;
+    margin-bottom: 10;
+}

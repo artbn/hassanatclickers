@@ -4,7 +4,6 @@ var multc = 5000
 var p1 = 0
 var p2 = 0
 var imanBoost = 0
-var count = 0
 var first = true
 var smilec = 100
 var thikrc = 2000
@@ -53,10 +52,12 @@ var hasanat = function() {
     if (first === true) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
-    first = false
+    window.count = 0
+	first = false
     }
     count = count + mult
-     document.getElementById("display").innerHTML = count + " Hassanat";
+	localStorage.setItem("hassanat count", count);
+    document.getElementById("display").innerHTML = localStorage.getItem("hassanat count") + " Hassanat";
 }
 var multiply = function() {
     if (count >= multc) {
@@ -395,11 +396,6 @@ window.setInterval(function(){
 	p1 = count
 	window.p3 = Math.round((imanBoost + p2)*10)/10
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
-
-    // Store
-    localStorage.setItem("hassanat count", count);
-    // Retrieve
-    document.getElementById("display").innerHTML = localStorage.getItem("hassanat count");
 
 }, 1000);
 var secret = function(){

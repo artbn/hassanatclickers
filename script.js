@@ -48,6 +48,7 @@ var s5 = false
 var s6 = false
 var s7 = false
 var s8 = false
+
 var hasanat = function() {
     if (first === true) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")
@@ -394,6 +395,10 @@ window.setInterval(function(){
 	p1 = count
 	window.p3 = Math.round((imanBoost + p2)*10)/10
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
+	// Store
+localStorage.setItem(count);
+// Retrieve
+document.getElementById("display").innerHTML = localStorage.getItem(count);
 }, 1000);
 var secret = function(){
     count = count + (count*0.75)

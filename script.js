@@ -395,10 +395,12 @@ window.setInterval(function(){
 	p1 = count
 	window.p3 = Math.round((imanBoost + p2)*10)/10
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
-	// Store
-localStorage.setItem(count);
-// Retrieve
-document.getElementById("display").innerHTML = localStorage.getItem(count);
+
+    // Store
+    localStorage.setItem("hassanat count", count);
+    // Retrieve
+    document.getElementById("display").innerHTML = localStorage.getItem("hassanat count");
+
 }, 1000);
 var secret = function(){
     count = count + (count*0.75)

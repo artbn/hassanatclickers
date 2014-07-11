@@ -4,7 +4,7 @@ var multc = 5000
 var p1 = 0
 var p2 = 0
 var imanBoost = 0
-var firstcheck = localStorage.getItem("first")
+var firstcheck = localStorage.getItem("firsto")
 if (firstcheck === false) {
 window.first = false}
 else {
@@ -58,7 +58,7 @@ var hasanat = function() {
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
 	first = false
 	window.count = 0
-	localStorage.setItem("first",false)
+	localStorage.setItem("firsto",false)
     }
     count = count + mult
 	localStorage.setItem("hassanat count", count);
@@ -395,7 +395,7 @@ var imanBoostCalc = function() {
     document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 }; 
 window.setInterval(function(){
-	count = Math.round((count + imanBoost)*10)/10
+	count = Math.round((count + imanBoost)*10)/100
 	document.getElementById("display").innerHTML = count + " Hassanat";
 	p2 = count - p1 - imanBoost
 	p1 = count

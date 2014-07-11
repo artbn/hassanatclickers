@@ -53,8 +53,9 @@ var hasanat = function() {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
 	first = false
+	window.count = 0
     }
-    window.count = count + mult
+    count = count + mult
 	localStorage.setItem("hassanat count", count);
     document.getElementById("display").innerHTML = localStorage.getItem("hassanat count") + " Hassanat";
 }

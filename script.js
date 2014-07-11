@@ -4,7 +4,11 @@ var multc = 5000
 var p1 = 0
 var p2 = 0
 var imanBoost = 0
-var first = true
+var firstcheck = localStorage.getItem("first")
+if (firstcheck === false) {
+window.first = false}
+else {
+window.first = true}
 var smilec = 100
 var thikrc = 2000
 var tasbeehc = 10000
@@ -47,13 +51,14 @@ var s5 = false
 var s6 = false
 var s7 = false
 var s8 = false
-
+var count = localStorage.getItem("hassanat count")
 var hasanat = function() {
     if (first === true) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
 	first = false
 	window.count = 0
+	localStorage.setItem("first",false)
     }
     count = count + mult
 	localStorage.setItem("hassanat count", count);

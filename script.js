@@ -51,7 +51,7 @@ var s5 = false
 var s6 = false
 var s7 = false
 var s8 = false
-var count = localStorage.getItem("hassanat count")
+//var count = localStorage.getItem("hassanat count")
 var hasanat = function() {
     if (first === 1) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")

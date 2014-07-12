@@ -63,7 +63,7 @@ var hasanat = function() {
     }
 	//count = localStorage.getItem("hassanatcount") + mult
 	count = count + mult
-	//localStorage.setItem("hassanatcount", count);
+	localStorage.setItem("hassanatcount", count);
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }
 var multiply = function() {

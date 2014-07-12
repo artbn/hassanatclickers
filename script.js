@@ -61,7 +61,7 @@ var hasanat = function() {
 	localStorage.setItem("firsto",0)
     }
     count = count + mult
-	//localStorage.setItem("hassanat count", count);
+	localStorage.setItem("hassanat count", count);
     document.getElementById("display").innerHTML = localStorage.getItem("hassanat count") + " Hassanat";
 }
 var multiply = function() {
@@ -395,7 +395,7 @@ var imanBoostCalc = function() {
     document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 }; 
 window.setInterval(function(){
-	count = Math.round((count + imanBoost)*10)/10
+	//count = Math.round((count + imanBoost)*10)/10
 	document.getElementById("display").innerHTML = count + " Hassanat";
 	p2 = count - p1 - imanBoost
 	p1 = count

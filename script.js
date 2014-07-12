@@ -58,7 +58,7 @@ var hasanat = function() {
 	first = false
 	window.count = 0
 	localStorage.setItem("firsto",false)
-	localStorage.setItem("hassanatcount",0)
+	localStorage.removeItem('hassanatcount');
     }
 	count = localStorage.getItem("hassanatcount") + mult
 	localStorage.setItem("hassanatcount", count);

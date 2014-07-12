@@ -28,14 +28,4 @@
 #body {
 background-image: url(http://hdwallsource.com/img/2014/5/green-background-21870-22423-hd-wallpapers.jpg);
 }
-.blink {
-    animation-duration: 1s;
-    animation-name: blink;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(2, start);
-}
-@keyframes blink {
-    80% {
-        visibility: hidden;
-    }
-}
+

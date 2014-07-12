@@ -7,6 +7,21 @@
 	<script src='script.js'></script>
 	<center><font size = "10"><font color = blue>Hassanat Clickers</font></font></center>
 	<center><font color = red>I am currently working on the program. Please excuse any problems and check back later. Thank you </font> </center>
+	<script>
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("display").innerHTML = localStorage.clickcount + " hassanat";
+    } else {
+        document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
+</script>
+<input id="bttn" onclick="clickCounter();" />
 </head>
 <style>
 body 

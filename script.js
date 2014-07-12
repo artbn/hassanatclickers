@@ -1,3 +1,4 @@
+//http://jsfiddle.net/pZ7Zy/
 var mult = 1
 var multp = 0
 var multc = 5000
@@ -60,7 +61,7 @@ var hasanat = function() {
 	localStorage.setItem("firsto",false)
 	localStorage.removeItem('hassanatcount');
     }
-	count = localStorage.getItem("hassanatcount") + mult
+	count = localStorage.getItem("hassanatcount") + 1
 	localStorage.setItem("hassanatcount", count);
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }

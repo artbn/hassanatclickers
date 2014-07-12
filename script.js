@@ -60,8 +60,7 @@ var hasanat = function() {
 	window.count = 0
 	localStorage.setItem("firsto",0)
     }
-	count = localStorage.getItem("hassanat count")
-    count = count + mult
+	count = localStorage.getItem("hassanat count") + mult
 	localStorage.setItem("hassanat count", count);
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }

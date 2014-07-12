@@ -395,7 +395,7 @@ var imanBoostCalc = function() {
     document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 }; 
 window.setInterval(function(){
-	count = Math.round((count + imanBoost)*10)/10
+	count = Math.round((count + imanBoost))
 	document.getElementById("display").innerHTML = count + " Hassanat";
 	p2 = count - p1 - imanBoost
 	p1 = count

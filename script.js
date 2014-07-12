@@ -59,8 +59,8 @@ var hasanat = function() {
 	window.count = 0
 	localStorage.setItem("firsto",false)
     }
-	count = localStorage.getItem("hassanat count") + mult
-	localStorage.setItem("hassanat count", count);
+	count = localStorage.getItem("hassanatcount") + mult
+	localStorage.setItem("hassanatcount", count);
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }
 var multiply = function() {

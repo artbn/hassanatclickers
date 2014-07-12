@@ -62,9 +62,20 @@ var hasanat = function() {
 	localStorage.removeItem('hassanatcount');
     }
 	//count = localStorage.getItem("hassanatcount") + mult
-	count = count + mult
-	localStorage.setItem("hassanatcount", count);
-    document.getElementById("display").innerHTML =  count + " Hassanat";
+	//count = count + mult
+	//localStorage.setItem("hassanatcount", count);
+    //document.getElementById("display").innerHTML =  count + " Hassanat";
+	if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("display").innerHTML = localStorage.clickcount + " Hassanat";
+    } else {
+        document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
 }
 var multiply = function() {
     if (count >= multc) {

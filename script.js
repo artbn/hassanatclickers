@@ -51,36 +51,36 @@ var s5 = false
 var s6 = false
 var s7 = false
 var s8 = false
-//var Number(localStorage.clickcount) = localStorage.getItem("hassanat Number(localStorage.clickcount)")
+//var count = localStorage.getItem("hassanat count")
 var hasanat = function() {
     if (first) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
 	first = false
-	window.Number(localStorage.clickcount) = 0
+	window.count = 0
 	localStorage.setItem("firsto",false)
-	localStorage.removeItem('hassanatNumber(localStorage.clickcount)');
+	localStorage.removeItem('hassanatcount');
     }
-	//Number(localStorage.clickcount) = localStorage.getItem("hassanatNumber(localStorage.clickcount)") + mult
-	//Number(localStorage.clickcount) = Number(localStorage.clickcount) + mult
-	//localStorage.setItem("hassanatNumber(localStorage.clickcount)", Number(localStorage.clickcount));
-    //document.getElementById("display").innerHTML =  Number(localStorage.clickcount) + " Hassanat";
+	//count = localStorage.getItem("hassanatcount") + mult
+	//count = count + mult
+	//localStorage.setItem("hassanatcount", count);
+    //document.getElementById("display").innerHTML =  count + " Hassanat";
 	if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickNumber(localStorage.clickcount)) {
-            localStorage.clickNumber(localStorage.clickcount) = Number(localStorage.clickNumber(localStorage.clickcount))+1;
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
         } else {
-            localStorage.clickNumber(localStorage.clickcount) = 1;
+            localStorage.clickcount = 1;
         }
-        document.getElementById("display").innerHTML = localStorage.clickNumber(localStorage.clickcount) + " Hassanat";
+        document.getElementById("display").innerHTML = localStorage.clickcount + " Hassanat";
     } else {
         document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
     }
 }
 }
 var multiply = function() {
-    if (Number(localStorage.clickcount) >= multc) {
+    if (count >= multc) {
         mult = mult * 2
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+        document.getElementById("display").innerHTML = count + " Hassanat";
         multp = multp + 1
         multc = Math.floor(multc * Math.pow(1.2,multp))
         document.getElementById("multiplyCost").innerHTML = "Cost: " + multc + " Hs | Purchased: " + multp;
@@ -91,9 +91,9 @@ var multiply = function() {
     
 }
 var smile = function() {
-    if (Number(localStorage.clickcount) >= smilec) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - smilec
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= smilec) {
+        count = count - smilec
+        document.getElementById("display").innerHTML = count + " Hassanat";
         smilep = smilep + 1
         smilec = Math.floor(smilec * Math.pow(1.01,smilep))
         document.getElementById("smileCost").innerHTML = "Cost: " + smilec + " Hs | Purchased: " + smilep;
@@ -112,9 +112,9 @@ var smile = function() {
     s8 = false
 }
 var thikr = function() {
-    if (Number(localStorage.clickcount) >= thikrc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - thikrc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= thikrc) {
+        count = count - thikrc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         thikrp = thikrp + 1
         thikrc = Math.floor(thikrc * Math.pow(1.015,thikrp))
         document.getElementById("thikrCost").innerHTML = "Cost: " + thikrc + " Hs | Purchased: " + thikrp;
@@ -125,9 +125,9 @@ var thikr = function() {
     }
 }
 var tasbeeh = function() {
-    if (Number(localStorage.clickcount) >= tasbeehc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - tasbeehc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= tasbeehc) {
+        count = count - tasbeehc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         tasbeehp = tasbeehp + 1
         tasbeehc = Math.floor(tasbeehc * Math.pow(1.02,tasbeehp))
         document.getElementById("tasbeehCost").innerHTML = "Cost: " + tasbeehc + " Hs | Purchased: " + tasbeehp;
@@ -148,9 +148,9 @@ var tasbeeh = function() {
     }
 }
 var duaa = function() {
-    if (Number(localStorage.clickcount) >= duaac) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - duaac
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= duaac) {
+        count = count - duaac
+        document.getElementById("display").innerHTML = count + " Hassanat";
         duaap = duaap + 1
         duaac = Math.floor(duaac * Math.pow(1.025,duaap))
         document.getElementById("duaaCost").innerHTML = "Cost: " + duaac + " Hs | Purchased: " + duaap;
@@ -161,9 +161,9 @@ var duaa = function() {
     }
 }
 var readingQuran = function() {
-    if (Number(localStorage.clickcount) >= rdgQuranc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - rdgQuranc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= rdgQuranc) {
+        count = count - rdgQuranc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         rdgQuranp = rdgQuranp + 1
         rdgQuranc = Math.floor(rdgQuranc * Math.pow(1.03,rdgQuranp))
         document.getElementById("readingQuranCost").innerHTML = "Cost: " +rdgQuranc + " Hs | Purchased: " + rdgQuranp;
@@ -184,9 +184,9 @@ var readingQuran = function() {
     }
 } 
 var obeyParents = function() {
-    if (Number(localStorage.clickcount) >= obeyParentsc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - obeyParentsc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= obeyParentsc) {
+        count = count - obeyParentsc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         obeyParentsp = obeyParentsp + 1
         obeyParentsc = Math.floor(obeyParentsc * Math.pow(1.035,obeyParentsp))
         document.getElementById("obeyParentsCost").innerHTML = "Cost: " + obeyParentsc + " Hs | Purchased: " + obeyParentsp;
@@ -197,9 +197,9 @@ var obeyParents = function() {
     }
 }
 var naflSalah = function() {
-    if (Number(localStorage.clickcount) >= naflSalahc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - naflSalahc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= naflSalahc) {
+        count = count - naflSalahc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         naflSalahp = naflSalahp + 1
         naflSalahc = Math.floor(naflSalahc * Math.pow(1.04,naflSalahp))
         document.getElementById("naflSalahCost").innerHTML = "Cost: " + naflSalahc + " Hs | Purchased: " + naflSalahp;
@@ -220,9 +220,9 @@ var naflSalah = function() {
     }
 }
 var charity = function() {
-    if (Number(localStorage.clickcount) >= charityc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - charityc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= charityc) {
+        count = count - charityc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         charityp = charityp + 1
         charityc = Math.floor(charityc * Math.pow(1.045,charityp))
         document.getElementById("charityCost").innerHTML = "Cost: " + charityc + " Hs | Purchased: " + charityp;
@@ -233,9 +233,9 @@ var charity = function() {
     }
 }
 var fardSalah = function() {
-    if (Number(localStorage.clickcount) >= fardSalahc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - fardSalahc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= fardSalahc) {
+        count = count - fardSalahc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         fardSalahp = fardSalahp + 1
         fardSalahc = Math.floor(fardSalahc * Math.pow(1.05,fardSalahp))
         document.getElementById("fardSalahCost").innerHTML = "Cost: " + fardSalahc + " Hs | Purchased: " + fardSalahp;
@@ -256,9 +256,9 @@ var fardSalah = function() {
     }
 }
 var taraweeh = function() {
-    if (Number(localStorage.clickcount) >= taraweehc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - taraweehc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= taraweehc) {
+        count = count - taraweehc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         taraweehp = taraweehp + 1
         taraweehc = Math.floor(taraweehc * Math.pow(1.055,taraweehp))
         document.getElementById("taraweehCost").innerHTML = "Cost: " + taraweehc + " Hs | Purchased: " + taraweehp;
@@ -269,9 +269,9 @@ var taraweeh = function() {
     }
 }
 var qiyam = function() {
-    if (Number(localStorage.clickcount) >= qiyamc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - qiyamc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= qiyamc) {
+        count = count - qiyamc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         qiyamp = qiyamp + 1
         qiyamc = Math.floor(qiyamc * Math.pow(1.06,qiyamp))
         document.getElementById("qiyamCost").innerHTML = "Cost: " + qiyamc + " Hs | Purchased: " + qiyamp;
@@ -292,9 +292,9 @@ var qiyam = function() {
     }
 }
 var itikaf = function() {
-    if (Number(localStorage.clickcount) >= itikafc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - itikafc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= itikafc) {
+        count = count - itikafc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         itikafp = itikafp + 1
         itikafc = Math.floor(itikafc * Math.pow(1.065,itikafp))
         document.getElementById("itikafCost").innerHTML = "Cost: " + itikafc + " Hs | Purchased: " + itikafp;
@@ -305,9 +305,9 @@ var itikaf = function() {
     }
 }
 var zakah = function() {
-    if (Number(localStorage.clickcount) >= zakahc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - zakahc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= zakahc) {
+        count = count - zakahc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         zakahp = zakahp + 1
         zakahc = Math.floor(zakahc * Math.pow(1.07,zakahp))
         document.getElementById("zakahCost").innerHTML = "Cost: " + zakahc + " Hs | Purchased: " + zakahp;
@@ -328,9 +328,9 @@ var zakah = function() {
     }
 }
 var sawm = function() {
-    if (Number(localStorage.clickcount) >= sawmc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - sawmc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= sawmc) {
+        count = count - sawmc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         sawmp = sawmp + 1
         sawmc = Math.floor(sawmc * Math.pow(1.075,sawmp))
         document.getElementById("sawmCost").innerHTML = "Cost: " + sawmc + " Hs | Purchased: " + sawmp;
@@ -341,9 +341,9 @@ var sawm = function() {
     }
 }
 var sunnahSawm = function() {
-    if (Number(localStorage.clickcount) >= sunnahSawmc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - sunnahSawmc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= sunnahSawmc) {
+        count = count - sunnahSawmc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         sunnahSawmp = sunnahSawmp + 1
         sunnahSawmc = Math.floor(sunnahSawmc * Math.pow(1.08,sunnahSawmp))
         document.getElementById("sunnahSawmCost").innerHTML = "Cost: " + sunnahSawmc + " Hs | Purchased: " + sunnahSawmp;
@@ -364,9 +364,9 @@ var sunnahSawm = function() {
     }
 }
 var umrah = function() {
-    if (Number(localStorage.clickcount) >= umrahc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - umrahc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= umrahc) {
+        count = count - umrahc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         umrahp = umrahp + 1
         umrahc = Math.floor(umrahc * Math.pow(1.085,umrahp))
         document.getElementById("umrahCost").innerHTML = "Cost: " + umrahc + " Hs | Purchased: " + umrahp;
@@ -377,9 +377,9 @@ var umrah = function() {
     }
 }
 var hajj = function() {
-    if (Number(localStorage.clickcount) >= hajjc) {
-        Number(localStorage.clickcount) = Number(localStorage.clickcount) - hajjc
-        document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    if (count >= hajjc) {
+        count = count - hajjc
+        document.getElementById("display").innerHTML = count + " Hassanat";
         hajjp = hajjp + 1
         hajjc = Math.floor(hajjc * Math.pow(1.09,hajjp))
         document.getElementById("HajjCost").innerHTML = "Cost: " + hajjc + " Hs | Purchased: " + hajjp;
@@ -397,8 +397,8 @@ var hajj = function() {
     s6 = false
     s7 = false
     s8 = false
-    Number(localStorage.clickcount) = Number(localStorage.clickcount) * 2
-    document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    count = count * 2
+    document.getElementById("display").innerHTML = count + " Hassanat";
     document.getElementById("secret").style.display = "block";
     }
 }
@@ -408,15 +408,15 @@ var imanBoostCalc = function() {
     document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 }; 
 window.setInterval(function(){
-	Number(localStorage.clickcount) = Math.round((Number(localStorage.clickcount) + imanBoost)*10)/10
-	document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
-	p2 = Number(localStorage.clickcount) - p1 - imanBoost
-	p1 = Number(localStorage.clickcount)
+	count = Math.round((count + imanBoost)*10)/10
+	document.getElementById("display").innerHTML = count + " Hassanat";
+	p2 = count - p1 - imanBoost
+	p1 = count
 	window.p3 = Math.round((imanBoost + p2)*10)/10
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 
 }, 1000);
 var secret = function(){
-    Number(localStorage.clickcount) = Number(localStorage.clickcount) + (Number(localStorage.clickcount)*0.75)
-    document.getElementById("display").innerHTML = Number(localStorage.clickcount) + " Hassanat";
+    count = count + (count*0.75)
+    document.getElementById("display").innerHTML = count + " Hassanat";
 }

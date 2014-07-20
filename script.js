@@ -54,16 +54,16 @@ var s8 = false
 //var count = localStorage.getItem("hassanat count")
 var clickCounter = function() {
 	alert("test")
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
-        } else {
-            localStorage.clickcount = 1;
-        }
-        document.getElementById("display").innerHTML = localStorage.clickcount + " hassanat";
-    } else {
-        document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
-    }
+    //if(typeof(Storage) !== "undefined") {
+        //if (localStorage.clickcount) {
+           // localStorage.clickcount = Number(localStorage.clickcount)+1;
+        //} else {
+           // localStorage.clickcount = 1;
+       // }
+      //  document.getElementById("display").innerHTML = localStorage.clickcount + " hassanat";
+    //} else {
+    //    document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
+    //}
 }
 var hasanat = function() {
     if (first) {

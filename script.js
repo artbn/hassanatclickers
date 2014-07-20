@@ -52,6 +52,18 @@ var s6 = false
 var s7 = false
 var s8 = false
 //var count = localStorage.getItem("hassanat count")
+function clickCounter() {
+    if(typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        } else {
+            localStorage.clickcount = 1;
+        }
+        document.getElementById("display").innerHTML = localStorage.clickcount + " hassanat";
+    } else {
+        document.getElementById("display").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+}
 var hasanat = function() {
     if (first) {
     alert("WARNING: NUMBERS ATTACHED TO CERTAIN DEEDS ARE NOT AT ALL REPRESENTATIVE OF THE ACTUAL REWARD ALLAH SWT GIVES! THESE NUMBERS ARE ARBITRARY! ALLAH SWT MULTIPLIES THE REWARD TO WHOM HE PLEASES!")

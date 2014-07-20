@@ -52,7 +52,8 @@ var s6 = false
 var s7 = false
 var s8 = false
 //var count = localStorage.getItem("hassanat count")
-function clickCounter() {
+var clickCounter = function() {
+	alert("test")
     if(typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
             localStorage.clickcount = Number(localStorage.clickcount)+1;

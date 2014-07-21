@@ -60,8 +60,8 @@ var hassanat = function() {
     alert("Asalmo Alikum and thank you for playing Hassanat Clickers. You are advised to make actual thikr with every click to get real hassanat inshAllah. Jazakum Allahu Kharan")
 	first = false
 	window.count = 0
-	localStorage.setItem("firsto",false)
-	localStorage.removeItem('hassanatcount');
+	window.localStorage.setItem("firsto",false)
+	window.localStorage.removeItem('hassanatcount');
     }
 	//count = localStorage.getItem("hassanatcount") + mult
 	count = count + mult

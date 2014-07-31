@@ -408,6 +408,9 @@ window.setInterval(function(){
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 
 }, 1000);
+window.setInterval(function(){
+	window.count = window.localStorage.getItem("countcount")
+}, 10000);
 var secret = function(){
     count = count + (count*0.75)
     document.getElementById("display").innerHTML = count + " Hassanat";

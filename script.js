@@ -63,9 +63,6 @@ var hassanat = function() {
 	window.localStorage.setItem("firsto",false)
 	window.localStorage.removeItem('hassanatcount');
     }
-	else {
-	window.count = 25
-	}
 
 	count = count + mult
 	window.localStorage.setItem("countcount",count)

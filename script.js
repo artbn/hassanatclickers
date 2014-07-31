@@ -65,7 +65,7 @@ var hassanat = function() {
     }
 
 	count = count + mult
-	window.localStorage.setItem("countcount",count)
+	window.localStorage.setItem("countcount",count/10)
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }
 
@@ -409,7 +409,7 @@ window.setInterval(function(){
 
 }, 1000);
 window.setInterval(function(){
-	window.count = window.localStorage.getItem("countcount") / 10
+	window.count = window.localStorage.getItem("countcount") 
 }, 10000);
 var secret = function(){
     count = count + (count*0.75)

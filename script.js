@@ -63,9 +63,12 @@ var hassanat = function() {
 	window.localStorage.setItem("firsto",false)
 	window.localStorage.removeItem('hassanatcount');
     }
-	//count = localStorage.getItem("hassanatcount") + mult
+	else {
+	window.count = window.localStorage.getItem("countcount")
+	}
+
 	count = count + mult
-	//localStorage.setItem("hassanatcount", count);
+	window.localStorage.setItem("countcount",count)
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }
 

@@ -65,7 +65,7 @@ var hassanat = function() {
     }
 
 	count = count + mult
-	window.localStorage.setItem("countcount",count/10)
+	window.localStorage.setItem("countcount",count)
     document.getElementById("display").innerHTML =  count + " Hassanat";
 }
 

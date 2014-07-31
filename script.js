@@ -51,7 +51,7 @@ var s5 = false
 var s6 = false
 var s7 = false
 var s8 = false
-//var count = localStorage.getItem("hassanat count")
+
 
 
 var hassanat = function() {
@@ -64,7 +64,7 @@ var hassanat = function() {
 	window.localStorage.removeItem('hassanatcount');
     }
 	else {
-	window.count = window.localStorage.getItem("countcount")
+	window.count = 25
 	}
 
 	count = count + mult

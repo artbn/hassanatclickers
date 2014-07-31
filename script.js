@@ -409,7 +409,7 @@ window.setInterval(function(){
 
 }, 1000);
 window.setInterval(function(){
-	window.count = window.localStorage.getItem("countcount")
+	window.count = window.localStorage.getItem("countcount") / 10
 }, 10000);
 var secret = function(){
     count = count + (count*0.75)

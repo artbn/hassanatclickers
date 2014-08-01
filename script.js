@@ -99,6 +99,7 @@ var smile = function() {
 		window.localStorage.setItem("smilepurch",smilep)
         smilec = Math.floor(smilec * Math.pow(1.01,smilep))
 		window.localStorage.setItem("smilecst",smilec)
+		smilec = Number(window.localStorage.getItem("smilecst"))
         document.getElementById("smileCost").innerHTML = "Cost: " + smilec + " Hs | Purchased: " + smilep;
         imanBoostCalc()
     }
@@ -439,7 +440,7 @@ window.setInterval(function(){
 }, 1000);
 window.setInterval(function(){
 	smilep = Number(window.localStorage.getItem("smilepurch"))
-	smilec = Number(window.localStorage.getItem("smilecst"))
+	//smilec = Number(window.localStorage.getItem("smilecst"))
 	document.getElementById("smileCost").innerHTML = "Cost: " + smilec + " Hs | Purchased: " + smilep;
 }, 100);
 var secret = function(){

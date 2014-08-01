@@ -12,10 +12,10 @@ window.first = false
 }
 else {
 window.first = true
-//var smilec = 100
-//var smilep = 0
-}
 var smilec = 100
+var smilep = 0
+}
+//var smilec = 100
 var thikrc = 2000
 var tasbeehc = 10000
 var duaac  = 50000
@@ -32,7 +32,7 @@ var sawmc  = 15250000
 var sunnahSawmc = 27500000
 var umrahc  = 42000000
 var hajjc  = 75000000
-var smilep = 0
+//var smilep = 0
 var thikrp = 0
 var tasbeehp = 0 
 var duaap  = 0

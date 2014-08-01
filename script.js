@@ -427,6 +427,7 @@ var imanBoostCalc = function() {
 window.setInterval(function(){
 	count = Number(window.localStorage.getItem("countcount"))
 	count = Math.round((count + imanBoost)*10)/10
+	window.localStorage.setItem("countcount",count)
 	document.getElementById("display").innerHTML = count + " Hassanat";
 	p2 = count - p1 - imanBoost
 	p1 = count

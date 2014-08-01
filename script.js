@@ -8,8 +8,11 @@ var imanBoost = 0
 if (localStorage.getItem("firsto")) {
 window.first = false}
 else {
-window.first = true}
+window.first = true
 var smilec = 100
+var smilep = 0
+}
+//var smilec = 100
 var thikrc = 2000
 var tasbeehc = 10000
 var duaac  = 50000
@@ -26,7 +29,7 @@ var sawmc  = 15250000
 var sunnahSawmc = 27500000
 var umrahc  = 42000000
 var hajjc  = 75000000
-var smilep = 0
+//var smilep = 0
 var thikrp = 0
 var tasbeehp = 0 
 var duaap  = 0
@@ -96,7 +99,9 @@ var smile = function() {
 		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         smilep = smilep + 1
+		window.localStorage.setItem("smilepurch",smilep)
         smilec = Math.floor(smilec * Math.pow(1.01,smilep))
+		window.localStorage.setItem("smilecost",smilec)
         document.getElementById("smileCost").innerHTML = "Cost: " + smilec + " Hs | Purchased: " + smilep;
         imanBoostCalc()
     }
@@ -435,6 +440,11 @@ window.setInterval(function(){
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 
 }, 1000);
+window.setInterval(function(){
+	smilep = window.localStorage.getItem("smilepurch")
+	smilec = window.localStorage.getItem("smilecost")
+	document.getElementById("smileCost").innerHTML = "Cost: " + smilec + " Hs | Purchased: " + smilep;
+}, 100);
 var secret = function(){
     count = count + (count*0.75)
 	window.localStorage.setItem("countcount",count)

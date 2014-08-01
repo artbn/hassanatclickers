@@ -53,6 +53,12 @@ var s7 = false
 var s8 = false
 
 
+//just realized that parseInt will round to an integer; if you want to keep track of tenths, use Number(...) instead (sorry) /u/rschaosid
+//12,458 not exactly sure what you're asking but the first time line 404 happens, count is a string that gets concatenated with "0", then converted implicitly to a number in order to multiply it by 10. That goes into Math.round, which returns a number, and divided by 10 again (still a number), which gets put back into count.
+//replace localStorage.getItem("countcount") in your code with parseInt(localStorage.getItem("countcount")); then it should work. /u/rschaosid
+//count comes out of localStorage as a string, then you do (line 404)
+//count = Math.round((count + imanBoost)*10)/10
+//JS thinks you want string concatenation (since count is a string), so imanBoost gets converted into the string "0" and tacked on to count. then the rest of the expression converts count back into a number and everything's fine after that.
 
 var hassanat = function() {
     if (first) {
@@ -400,6 +406,7 @@ var imanBoostCalc = function() {
     document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 }; 
 window.setInterval(function(){
+	count = Number(window.localStorage.getItem("countcount"))
 	count = Math.round((count + imanBoost)*10)/10
 	document.getElementById("display").innerHTML = count + " Hassanat";
 	p2 = count - p1 - imanBoost
@@ -408,9 +415,6 @@ window.setInterval(function(){
 	document.getElementById("imanboostcalc").innerHTML = p3 + " Hps";
 
 }, 1000);
-window.setInterval(function(){
-	window.count = window.localStorage.getItem("countcount") 
-}, 10000);
 var secret = function(){
     count = count + (count*0.75)
     document.getElementById("display").innerHTML = count + " Hassanat";

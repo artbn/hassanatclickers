@@ -77,6 +77,8 @@ var hassanat = function() {
 
 var multiply = function() {
     if (count >= multc) {
+		count = count - multc
+		window.localStorage.setItem("countcount",count)
         mult = mult * 2
         document.getElementById("display").innerHTML = count + " Hassanat";
         multp = multp + 1
@@ -91,6 +93,7 @@ var multiply = function() {
 var smile = function() {
     if (count >= smilec) {
         count = count - smilec
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         smilep = smilep + 1
         smilec = Math.floor(smilec * Math.pow(1.01,smilep))
@@ -112,6 +115,7 @@ var smile = function() {
 var thikr = function() {
     if (count >= thikrc) {
         count = count - thikrc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         thikrp = thikrp + 1
         thikrc = Math.floor(thikrc * Math.pow(1.015,thikrp))
@@ -125,6 +129,7 @@ var thikr = function() {
 var tasbeeh = function() {
     if (count >= tasbeehc) {
         count = count - tasbeehc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         tasbeehp = tasbeehp + 1
         tasbeehc = Math.floor(tasbeehc * Math.pow(1.02,tasbeehp))
@@ -148,6 +153,7 @@ var tasbeeh = function() {
 var duaa = function() {
     if (count >= duaac) {
         count = count - duaac
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         duaap = duaap + 1
         duaac = Math.floor(duaac * Math.pow(1.025,duaap))
@@ -161,6 +167,7 @@ var duaa = function() {
 var readingQuran = function() {
     if (count >= rdgQuranc) {
         count = count - rdgQuranc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         rdgQuranp = rdgQuranp + 1
         rdgQuranc = Math.floor(rdgQuranc * Math.pow(1.03,rdgQuranp))
@@ -184,6 +191,7 @@ var readingQuran = function() {
 var obeyParents = function() {
     if (count >= obeyParentsc) {
         count = count - obeyParentsc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         obeyParentsp = obeyParentsp + 1
         obeyParentsc = Math.floor(obeyParentsc * Math.pow(1.035,obeyParentsp))
@@ -197,6 +205,7 @@ var obeyParents = function() {
 var naflSalah = function() {
     if (count >= naflSalahc) {
         count = count - naflSalahc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         naflSalahp = naflSalahp + 1
         naflSalahc = Math.floor(naflSalahc * Math.pow(1.04,naflSalahp))
@@ -220,6 +229,7 @@ var naflSalah = function() {
 var charity = function() {
     if (count >= charityc) {
         count = count - charityc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         charityp = charityp + 1
         charityc = Math.floor(charityc * Math.pow(1.045,charityp))
@@ -233,6 +243,7 @@ var charity = function() {
 var fardSalah = function() {
     if (count >= fardSalahc) {
         count = count - fardSalahc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         fardSalahp = fardSalahp + 1
         fardSalahc = Math.floor(fardSalahc * Math.pow(1.05,fardSalahp))
@@ -256,6 +267,7 @@ var fardSalah = function() {
 var taraweeh = function() {
     if (count >= taraweehc) {
         count = count - taraweehc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         taraweehp = taraweehp + 1
         taraweehc = Math.floor(taraweehc * Math.pow(1.055,taraweehp))
@@ -269,6 +281,7 @@ var taraweeh = function() {
 var qiyam = function() {
     if (count >= qiyamc) {
         count = count - qiyamc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         qiyamp = qiyamp + 1
         qiyamc = Math.floor(qiyamc * Math.pow(1.06,qiyamp))
@@ -292,6 +305,7 @@ var qiyam = function() {
 var itikaf = function() {
     if (count >= itikafc) {
         count = count - itikafc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         itikafp = itikafp + 1
         itikafc = Math.floor(itikafc * Math.pow(1.065,itikafp))
@@ -305,6 +319,7 @@ var itikaf = function() {
 var zakah = function() {
     if (count >= zakahc) {
         count = count - zakahc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         zakahp = zakahp + 1
         zakahc = Math.floor(zakahc * Math.pow(1.07,zakahp))
@@ -328,6 +343,7 @@ var zakah = function() {
 var sawm = function() {
     if (count >= sawmc) {
         count = count - sawmc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         sawmp = sawmp + 1
         sawmc = Math.floor(sawmc * Math.pow(1.075,sawmp))
@@ -341,6 +357,7 @@ var sawm = function() {
 var sunnahSawm = function() {
     if (count >= sunnahSawmc) {
         count = count - sunnahSawmc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         sunnahSawmp = sunnahSawmp + 1
         sunnahSawmc = Math.floor(sunnahSawmc * Math.pow(1.08,sunnahSawmp))
@@ -364,6 +381,7 @@ var sunnahSawm = function() {
 var umrah = function() {
     if (count >= umrahc) {
         count = count - umrahc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         umrahp = umrahp + 1
         umrahc = Math.floor(umrahc * Math.pow(1.085,umrahp))
@@ -377,6 +395,7 @@ var umrah = function() {
 var hajj = function() {
     if (count >= hajjc) {
         count = count - hajjc
+		window.localStorage.setItem("countcount",count)
         document.getElementById("display").innerHTML = count + " Hassanat";
         hajjp = hajjp + 1
         hajjc = Math.floor(hajjc * Math.pow(1.09,hajjp))
@@ -417,5 +436,6 @@ window.setInterval(function(){
 }, 1000);
 var secret = function(){
     count = count + (count*0.75)
+	window.localStorage.setItem("countcount",count)
     document.getElementById("display").innerHTML = count + " Hassanat";
 }

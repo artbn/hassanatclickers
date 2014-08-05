@@ -7,11 +7,13 @@ var p2 = 0
 var imanBoost = 0
 if (localStorage.getItem("firsto")) {
 window.first = false
-alert9("One")
+var smilec = 100
+var smilep = 0
 }
 else {
 window.first = true
-alert("two")
+//var smilec = 100
+//var smilep = 0
 }
 //var smilec = 100
 var thikrc = 2000

@@ -5,14 +5,14 @@ var multc = 5000
 var p1 = 0
 var p2 = 0
 var imanBoost = 0
-//if (localStorage.getItem("firsto")) {
-//window.first = false
-//alert("One")
-//}
-//else {
-//window.first = true
-//alert("two")
-//}
+if (localStorage.getItem("firsto")) {
+window.first = false
+alert9("One")
+}
+else {
+window.first = true
+alert("two")
+}
 //var smilec = 100
 var thikrc = 2000
 var tasbeehc = 10000
